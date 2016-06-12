@@ -1,0 +1,232 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>寻找巧轻脆女孩</title>
+<script type="text/javascript">
+var b = parseInt(window.screen.width),
+    c = b / 640;
+if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+    var d = parseFloat(RegExp.$1);
+    document.write(d > 2.3 ? '<meta name="viewport" content="width=640, user-scalable=no,maximum-scale = 1.5">' : '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+} else document.write('<meta name="viewport" content="width=640, user-scalable=no,minimum-scale = ' + c + ',maximum-scale = 1,target-densitydpi=device-dpi">');
+</script>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/easeljs-0.8.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/exif.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="page-index" class="page">
+		<div class="img-1 animated slideInDown"></div>
+		<div class="img-2"></div>
+		<div class="img-3 animated fadeOut"></div>
+		<div class="btns animated fadeInSmall">
+			<div class="btn btnStart"></div>
+			<div class="btnRule"><span class="check"></span><span class="term">我已阅读本次活动条款</span></div>
+		</div>
+		<div class="model">
+			<div class="model-1"></div>
+			<div class="model-2"></div>
+			<div class="model-3"></div>
+			<div class="model-4"></div>
+			<div class="model-5"></div>
+			<div class="model-6"></div>
+		</div>
+	</div>
+	<div id="page-model" class="page">
+		<div class="logo"></div>
+	    <div class="model">
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="img/model-1.jpg"></div>
+		            <div class="swiper-slide"><img src="img/model-2.jpg"></div>
+		            <div class="swiper-slide"><img src="img/model-3.jpg"></div>
+		            <div class="swiper-slide"><img src="img/model-4.jpg"></div>
+		            <div class="swiper-slide"><img src="img/model-5.jpg"></div>
+		            <div class="swiper-slide"><img src="img/model-6.jpg"></div>
+		        </div>
+	        </div>
+	    </div>
+		<div class="btns animated fadeInSmall">
+			<div class="btn btnChange"></div>
+			<div class="btn btnPicture"></div>
+		</div>
+	</div>
+	<div id="page-picture" class="page">
+		<div class="img-1"></div>
+		<div class="preview"></div>
+	    <div class="model">
+		    <div class="container">
+			    <canvas id="canvas" width="544" height="634"></canvas>
+				<div class="img-2"></div>
+		    </div>
+	    </div>
+		<div class="btns btns-1 active animated fadeInSmall">
+			<div class="btn btnUpload"><input type="file" class="filedata" name="filedata" accept="image/*" /></div>
+		</div>
+		<div class="btns btns-2 animated fadeInSmall">
+			<div class="btn btnReUpload"></div>
+			<div class="btn btnSave"></div>
+		</div>
+	</div>
+	<div id="page-result" class="page">
+		<div class="img-3"></div>
+		<div class="model">
+			<div class="model-1"></div>
+			<div class="model-2"></div>
+			<div class="model-3"></div>
+			<div class="model-4"></div>
+			<div class="model-5"></div>
+			<div class="model-6"></div>
+			<div class="preview"></div>
+		</div>
+		<div class="container result active">
+			<div class="img-1 animated bounceInDown"></div>
+			<div class="text">
+				<div class="text-1"></div>
+				<div class="text-2"></div>
+				<div class="text-3"></div>
+				<div class="text-4"></div>
+				<div class="text-5"></div>
+			</div>
+			<div class="btns animated fadeInSmall">
+				<div class="btn btnRetry"></div>
+				<div class="btn btnForm"></div>
+			</div>
+		</div>
+		<div class="container form">
+			<div class="img-2 animated bounceIn"></div>
+			<div class="input animated flipInX"><input type="tel" id="tel" maxlength="11" placeholder="请输入手机号码"></div>
+			<div class="btns animated fadeInSmall">
+				<div class="btn btnSubmit"></div>
+			</div>
+		</div>
+	</div>
+	<div id="page-share" class="page">
+		<div class="img-1 animated bounceInDown"></div>
+		<div class="img-2 animated fadeInSmall"></div>
+		<div class="img-3 animated zoomIn"></div>
+		<div class="preview">
+			<div class="img-4 animated fadeInSmall"></div>
+		</div>
+		<div class="save"></div>
+		<div class="bubble left">
+			<div class="bubble-1 animated fadeIn"><b></b></div>
+			<div class="bubble-2 animated fadeIn"><b></b></div>
+			<div class="bubble-3 animated fadeIn"><b></b></div>
+			<div class="bubble-4 animated fadeIn"><b></b></div>
+			<div class="bubble-5 animated fadeIn"><b></b></div>
+		</div>
+	</div>
+	<div id="page-loading">
+		<div class="img-1"></div>
+		<div class="img-2"></div>
+	</div>
+</div>
+<div class="tip tipTerm">
+	<div class="close"></div>
+	<div class="content">
+		<h1>奥利奥巧轻脆“寻找巧轻脆女孩”活动规则</h1>
+		<div class="swiper-term swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+
+本规则中使用的通用术语：<br>
+此为“寻找巧轻脆女孩”活动规则。<br>
+在本规则中，“我们”及“我们的”系指“寻找巧轻脆女孩”活动的主办方亿滋食品企业管理（上海）有限公司（以下简称“亿滋”）。<br>
+“您”系指合格的“寻找巧轻脆女孩”活动的参与者。<br>
+参与者参与游戏即视为不可撤销地同意本活动规则<br>
+本次活动不以购买任何主办方的产品为条件，也不关联任何产品销售。<br>
+<br>
+活动时间：<br>
+“寻找巧轻脆女孩”活动将从中国北京时间2016年01月11日00:00:00开始，至中国北京时间2016年01月21日23:59:59。<br>
+<br>
+活动参与者：<br>
+如果您是微信（Wechat）的女性合法用户，即有资格参与“寻找巧轻脆女孩”活动，本“寻找巧轻脆女孩”活动仅在中国境内有效。<br>
+<br>
+活动参与方式：<br>
+1）参与者通过扫描奥利奥巧轻脆“寻找巧轻脆女孩”活动广告上的二维码进入奥利奥巧轻脆“寻找巧轻脆女孩”活动主页<br>
+2）选择一张模特与巧轻脆互动的照片进行模仿 <br>
+3）照样摆拍一张参与者自己的照片并且上传（“照片”）<br>
+4）在活动页面准确填写个人资料（手机），相关信息提交后不可更改。<br>
+5）评委团（由摄影师张悦及造型团队组成）将会在2016年01月22日评出并在奥利奥官方微博公布前20名最能呈现出轻盈之感的女孩。<br>
+<br>
+获奖规则：<br>
+1. 您按上述步骤参与活动，即可获得1次参与评选的机会。同一微信用户多次登录活动页面上传不同照片便可获得多次参与评选的机会。<br>
+2. 参与者需要在活动结束前（2016年01月21日23: 59:59）在活动网站按照网页提示提供个人资料（手机）方可参与评选。<br>
+<br>
+奖励设置：<br>
+评委团评选出的前20名女孩将会接受造型团队的打造，并由著名摄影师张悦进行平面大片拍摄，最终还可登上时尚杂志。（“轻盈大片”）<br>
+<br>
+活动特别约定：<br>
+1. 活动截止时间为2016年01月21日23:59:59，参与者需在前述截止时间前在活动页面填写个人资料，未在规定时间内填写个人资料的参与者视为放弃参与评选。<br>
+2. 请获奖者在活动页面准确填写个人资料（手机），相关信息提交后不可更改。工作人员将在结果公布当天联系获奖者。轻盈大片具体拍摄时间地点以实际沟通时间为准。获奖者参与轻盈大片的拍摄即视为不可<br>撤销地同意主办方将永久性的无偿且不受限制地在平面杂志、网络、社交媒体、电商等除产品包装以外的渠道使用其肖像、姓名用于商业或非商业用途，包括但不限于将带有参与者肖像的轻盈大片发布在高档时尚杂<br>志COSMO，用于奥利奥系列产品的商业推广活动。<br>
+3.参与者提供的个人资料必须清晰、准确、完整，如因参与者所提供的个人资料有误或非主办方原因而导致无法联系到参与者，将视为参与者主动放弃奖励奖品，主办方将不承担任何责任。<br>
+4. 如果您被确认为此次“寻找巧轻脆女孩”获奖者：<br>
+（1）您不能将您的奖品兑换成现金或任何其他商品或服务。<br>
+（2）您不能指定其他人为获奖者。<br>
+5. 活动主办方不对因参与者资料有误、网络传输等原因而导致参与者提交的信息错误或延误承担任何责任。非因主办方原因导致获奖者未能收到中奖确认、未能按时或正确填写资料等无法确认中奖的情形，主办方无需承担任何责任。<br>
+6. 本“寻找巧轻脆女孩”活动由中华人民共和国法律管辖，并且您同意由亿滋住所地的法院对由本次活动引发的任何争议享有专属管辖权及审理权。<br>
+7. 您参与本次活动即视为同意本次活动规则，并遵守此规则，如若违反本次活动的相关规则，则需负相应责任且主办方有权在不事先通知的情况下取消您参与活动及获奖的资格。本次活动参与者仅限完全民事行为能力人。<br>
+8. 如果欺诈、病毒、故障、灾难事故等其他不可抗力影响本次“寻找巧轻脆女孩”活动的公平和公正，我们将保留取消或暂停本活动的权利。上述情形无论是人为还是技术故障原因所导致，本权利均将保留。<br>
+9. 如果您试图通过入侵、作弊或任何欺诈的方式危害“寻找巧轻脆女孩”活动的公正性或合法运作，我们有权要求您承担一定责任并在不事先通知的情况下取消您参与活动及中奖的资格。此外，我们有权取消您参与任何我们未来的活动的资格，因此请您公平参与。<br>
+10. 参与者参与活动过程中所发生的手机流量费和短信费等费用，由参与者自理。参与者理解并同意在拍摄时产生的费用均由参与者自行承担。<br>
+11. 参与者理解并同意主办方将保存、编辑、剪辑、复制、传播、使用参与者的头像、微信账号名称用于商业宣传或者非商业之用途。<br>
+12. 本次活动所有信息（包括参与者上传的个人资料等）均以计算机后台系统收到数据为准。<br>
+13. 如参加者利用违法违规的方式参与本次活动，主办方有权在不事先通知的前提下取消该参与者参与活动及获奖的资格，并保留追求相关法律责任的权利。<br>
+14. 如遇网络或不可抗力等因素导致本活动无法进行时，主办方有权决定取消、终止、修改或暂停本活动。<br>
+15. 主办方不对因网络传输原因而导致活动参与者提交的信息丢失或错误承担任何责任。<br>
+16. 参与者参加活动的行为若有任何违反国家法律法规或侵犯任何第三方的合法权益的情形时，活动主办方有权直接删除该等违反规定之信息，并可取消参与者参与活动资格。<br>
+17. 参与者所上传的照片，需确保其内容不涉及任何辱骂、色情、政治、暴力、宗教等违法违禁内容并不侵犯任何第三方的权利，因所上传的照片产生的任何违法违禁行为或者侵犯任何第三方的权利，其后果均由参与者自行承担，主办方有权在不事先通知的前提下删除其上传的照片甚至取消该参与者参与活动及获奖的资格，活动主办方对此保留追究权利，并不承担任何相关法律责任。<br>
+18. 参与者理解并同意，凡参加活动即视为参与者做出明示且不可撤销地同意，授权主办方亿滋食品企业管理（上海）有限公司及其授权运营机构在此活动及任何相关的宣传中不受限制无偿永久性地使用参与者的姓名、微信名称、头像、发布的照片、肖像及其他任何由其本人提供的个人信息，而无需再另行征求确认同意。<br>
+19. 对于本次活动未尽事宜，主办方在法律允许范围内有权做出解释或补充规定。
+
+	            </div>
+	        </div>
+	        <div class="swiper-scrollbar"></div>
+	    </div>
+	</div>
+</div>
+<div class="tip tipRule"></div>
+<div id="hint"></div>
+<div id="mask" style=" position: absolute; top: -9999px; left: -9999px;">
+	<img src="img/mask-0.png">
+	<img src="img/mask-1.png" data-x="455" data-y="335">
+	<img src="img/mask-2.png" data-x="120" data-y="350">
+	<img src="img/mask-3.png" data-x="295" data-y="225">
+	<img src="img/mask-4.png" data-x="205" data-y="250">
+	<img src="img/mask-5.png" data-x="260" data-y="260">
+	<img src="img/mask-6.png" data-x="180" data-y="380">
+</div>
+<script type="text/javascript">
+App.init();
+
+var _smq = _smq || [];
+
+_smq.push(['_setAccount', '306bf32', new Date()]);
+_smq.push(['pageview']);
+
+(function() {
+var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/collect.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+})();
+
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?7acfa0b25be13792be737de0e88a515e";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

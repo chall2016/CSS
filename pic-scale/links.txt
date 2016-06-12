@@ -1,0 +1,24 @@
+http://codepen.io/jtangelder/pen/zKHDk
+
+http://www.cnblogs.com/iamlilinfeng/p/4239957.html?utm_source=tuicool
+
+http://park.jobdeer.com/discussion/22/%E4%BD%BF%E7%94%A8-html2canvas-%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E6%88%AA%E5%9B%BE%E5%B9%B6%E4%B8%8B%E8%BD%BD
+
+
+方法：
+只要用hammer.js 实现图片的拉伸，缩放；然后用html2canvas实现合成后图片的生成，并显示，并通过接口返回base64码串，保存生成的图片
+
+
+
+
+推荐链接：
+关于pinchstart等的用法：
+http://blog.163.com/hongshaoguoguo@126/blog/static/18046981201493052753716/
+
+
+http://blog.csdn.net/leinchu/article/details/47041279
+
+
+
+
+http://res.jiconglin.com/whns/index
